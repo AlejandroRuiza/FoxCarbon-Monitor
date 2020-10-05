@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics</title>
+
+    <link rel="icon" type="image/png" href="/img/icons/005-pie-chart.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzQ_TTpXCQtW7eXJU2AJ1Sf985pl9rJUo&callback=initMap&libraries=&v=weekly" defer></script>
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="bar secondary">
+            <img src="/img/icons/leaf.png" alt="Logo">
+            <nav class="nav" aria-label="">
+                <a href="index.html">Home</a>
+                <a href="calculator.html">Footprint Calculator</a>
+                <a href="graphics.html">Graphics</a>
+                <a href="about.html">About us</a>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main class="graphics-cont">
+        <div class="aside">
+            <fieldset class="form" id="location-form">
+                <legend>Get Graphics</legend>
+
+                <label for="dateA">Start Date:</label>
+                <input type="date" id="dateA">
+
+                <label for="dateB">Finish Date:</label>
+                <input type="date" id="dateB">
+
+                <label for="parametros">Parameters:</label>
+
+                <select id="parametros">
+                    <option selected>CO Concentration</option>
+                    <option>Methane</option>    
+                    <option>SO2 Concentration</option>
+                    <option>Nitrogen Monoxide</option>
+                    <option>Nitrogen Dioxide</option> 
+                </select>
+
+                <label for="location-input">Location:</label>
+                <input type="text" id="location-input" placeholder="CP/Coordinates/Direction">
+
+                <div id="formatted-address"></div>
+
+                <input type="submit" id="button" class="boton">
+            </fieldset>
+
+            <h3>What is the risk?</h3>
+            <div class="tooltip center-text">
+                <img src="/img/icons/CH4.png" alt="CH4">
+                <span class="tooltiptext">High levels of methane can reduce the amount of oxygen breathed from the air. 
+                    Can result in mood changes, slurred speech, vision problems, memory loss, nausea, vomiting, facial flushing and headache. 
+                    In severe cases, there may be changes in breathing and heart rate, balance problems, numbness, and unconsciousness. If exposure is large or continues for a longer period it can kill. 
+                    </span>
+            </div>
+
+            <div class="tooltip center-text">
+                <img src="/img/icons/CO.png" alt="CO">
+                <span class="tooltiptext">Causes Hypoxia. 
+                    Hypoxia caused by CO can affect the functioning of the heart, brain, platelets and the endothelium of blood vessels.
+                    It has been associated with decreased visual perception, work capacity, manual dexterity, and learning ability.
+                    </span>
+            </div>
+
+            <div class="tooltip center-text">
+                <img src="/img/icons/NO.png" alt="NO">
+                <span class="tooltiptext">Can cause respiratory problems, particularly in sensitive individuals such as asthmatics.
+                    Nitric oxide is a potent and rapid inducer of methemoglobinemia.
+                    </span>
+            </div>
+
+            <div class="tooltip center-text">
+                <img src="/img/icons/NO2.png" alt="NO2">
+                <span class="tooltiptext">Can irritate airways in the human respiratory system. Such exposures over short periods can aggravate respiratory diseases, particularly asthma, leading to respiratory symptoms (such as coughing, wheezing or difficulty breathing).
+                </span>
+            </div>
+
+            <div class="tooltip center-text">
+                <img src="/img/icons/SO2.png" alt="SO2">
+                <span class="tooltiptext">Produces acute or chronic irritation and inflammation of the conjuctival and respiratory mucosa.
+                    Can produce olfactory perception problems, respiratory discomfort, acute respiratory pains and pulmonary edema.
+                    Continuous or frequent exposure to high concentrations can cause an increase in the incidence of respiratory diseases in children, worsening of conditions in asthmatic individual and chronic respiratory diseases.
+                    </span>
+            </div>
+        </div>
+
+        <div class="maps">
+            <div id="map"></div>
+            <div id="map2"></div>
+        </div>
+
+        <script src="/scripts/graphics.js">
+        </script>
+
+    </main>
+
+    <section class="corgi">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.cetys.mx">
+            <img src="/img/cetys.png" alt="CETYS">
+        </a>
+
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/FoxRobotics">
+            <img src="/img/fox-robotics.png" alt="FOX CODING">
+        </a>
+
+        <a target="_blank" rel="noopener noreferrer" href="https://www.spaceappschallenge.org">
+            <img src="/img/space-apps.png" alt="SPACE APPS">
+        </a>
+    </section>
+
+    <footer>
+        <nav class="nav" aria-label="">
+            <a href="index.html">Home</a>
+            <a href="calculator.html">Footprint Calculator</a>
+            <a href="graphics.html">Graphics</a>
+            <a href="about.html">About us</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

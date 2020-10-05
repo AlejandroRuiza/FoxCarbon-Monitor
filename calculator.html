@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="icon" type="image/png" href="/img/icons/calculator.png" />
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="bar secondary">
+            <img src="/img/icons/leaf.png" alt="Logo">
+
+            <nav class="nav" aria-label="">
+                <a href="index.html">Home</a>
+                <a href="calculator.html">Footprint Calculator</a>
+                <a href="graphics.html">Graphics</a>
+                <a href="about.html">About us</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="calculator-cont center-text">
+        <h1>Carbon Footprint Calculator</h1>
+        <legend>What is your Household Carbon Footprint? Please answer the following form to get the answer.</legend>
+        <fieldset class="contenedor calculator-form ">
+            <div class="questions">
+
+
+                <div class="pregunta">
+                    <label for="electricity">Electricity Consuption in kWh (kiloWatt-hours) per month.</label>
+                    <input type="number" id="electricity" required>
+                </div>
+
+                <div class="pregunta">
+                    <label for="water">What percentage  was obtained from a renewable source(dlls)?</label>
+                    <input type="number" id="water" required>
+                </div>
+
+                <div class="pregunta">
+                    <label for="vehicle">Gallons of gasoline consumed per month.</label>
+                    <input type="number" id="vehicle" required>
+                </div>
+
+                <div class="pregunta">
+                    <label for="oil">How much fuel oil does your household use per month(dlls)?</label>
+                    <input type="number" id="oil" required>
+                </div>
+
+
+                <div class="recycles">
+                    <p>What do you recycle?</p>
+                    <div class="recycle-option">
+                        <div>
+                            <input type="checkbox" id="plastic" value="1">
+                            <label>plastic</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="glass" value="1">
+                            <label>glass </label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="newspaper" value="1">
+                            <label>newspaper</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" id="magazines" value="1">
+                            <label>magazines</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="aluminum" value="1">
+                            <label>aluminum</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pregunta">
+                    <label for="propane">How much propane does your household use per month(dlls)?</label>
+                    <input type="number" id="propane" required>
+                </div>
+
+                <div class="pregunta">
+                    <label for="gas">How much natural gas does your household use per month(dlls)?</label>
+                    <input type="number" id="gas" required>
+                </div>
+
+                <input type="submit" id="button" class="boton">
+            </div>
+
+            <div>
+                <p id='result'></p>
+            </div>
+
+            <div id="pie-chart"></div>
+
+            <script src="/scripts/calculator.js"></script>
+
+        </fieldset>
+    </main>
+
+
+    <section class="corgi">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.cetys.mx">
+            <img src="/img/cetys.png" alt="CETYS">
+        </a>
+
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/FoxRobotics">
+            <img src="/img/fox-robotics.png" alt="FOX CODING">
+        </a>
+
+        <a target="_blank" rel="noopener noreferrer" href="https://www.spaceappschallenge.org">
+            <img src="/img/space-apps.png" alt="SPACE APPS">
+        </a>
+    </section>
+
+    <footer>
+        <nav class="nav" aria-label="">
+            <a href="index.html">Home</a>
+            <a href="calculator.html">Footprint Calculator</a>
+            <a href="graphics.html">Graphics</a>
+            <a href="about.html">About us</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
